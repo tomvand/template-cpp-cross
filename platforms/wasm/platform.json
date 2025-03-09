@@ -1,0 +1,9 @@
+{
+  "name": "wasm",
+  "title": "WebAssembly",
+  "description": "WebAssembly using Emscripten.",
+  "engines": {
+    "platformio": "^6"
+  },
+  "version": "0.0.0"
+}
