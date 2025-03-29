@@ -20,6 +20,12 @@ env.Replace(
     SIZEPRINTCMD='$SIZETOOL $SOURCES'
 )
 
+# TODO: fix hardcoded link flags
+env.Append(
+  CCFLAGS=["-sUSE_SDL=2", "-sUSE_SDL_IMAGE=2", "-sSDL2_IMAGE_FORMATS=png"],
+  LINKFLAGS=["--embed-file", "src/wasm/assets", "-sUSE_SDL=2", "-sUSE_SDL_IMAGE=2", "-sSDL2_IMAGE_FORMATS=png"]
+)
+
 #
 # Target: Build executable program
 #
